@@ -1,0 +1,22 @@
+@startuml
+annotation java.lang.SuppressWarnings
+class java.awt.Dimension
+class java.util.ArrayList
+class java.util.List
+class javax.swing.JFrame
+class javax.swing.table.DefaultTableModel
+class view.Bebida
+class view.Comida
+class view.Menu
+class view.Postre
+class view.Vista
+view.Bebida --|> view.Menu
+view.Comida --|> view.Menu
+view.Postre --|> view.Menu
+view.Vista ..> java.lang.SuppressWarnings
+view.Vista ..> java.awt.Dimension
+view.Vista ..> java.util.ArrayList
+view.Vista ..> java.util.List
+view.Vista --|> javax.swing.JFrame
+view.Vista ..> javax.swing.table.DefaultTableModel
+@enduml
